@@ -1,27 +1,94 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes"><meta name="theme-color" content="#087443"><title>Next Batch Interest Form Preview</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
-<body class="next-batch-page"><div class="topline"><div class="wrap topinner"><span><i class="flag"></i> Nigeria · Independent information page</span><span>Next batch interest form preview</span></div></div>
-<header class="header"><div class="wrap nav"><a class="brand" href="index.html"><span class="crest">NG</span><span><b>NIGERIA ₦50K</b><small>SUPPORT PROGRAMME</small></span></a><a class="btn ghost" style="color:#087443;border-color:#087443" href="index.html">Back to homepage</a></div></header>
-<main><section class="section"><div class="wrap"><div class="sectionhead"><span class="kicker">NEXT BATCH · FORM PREVIEW</span><h2>Register your interest</h2><p>This is an independent form preview only. It is not an official government registration portal, and no verified next-batch application has been announced. This form does not send or store information.</p></div>
-<div class="noticebox" style="display:block"><div class="noticebox" style="margin-bottom:18px"><p><b>Important:</b> Do not enter real personal information. No application is submitted through this page.</p></div><form id="interestPreviewForm"><p><label for="firstName"><b>Name</b></label><br><input id="firstName" name="firstName" type="text" autocomplete="given-name" required placeholder="Enter your name"></p><p><label for="surname"><b>Surname</b></label><br><input id="surname" name="surname" type="text" autocomplete="family-name" required placeholder="Enter your surname"></p><p><label for="phoneNumber"><b>Phone number</b></label><br><input id="phoneNumber" name="phoneNumber" type="tel" autocomplete="tel" required placeholder="Enter your phone number"></p><div class="noticebox"><p><b>Optional management contribution: ₦5,000</b></p>
-<p>This contribution is entirely voluntary, proposed by this page's publisher, and is not an official government fee. You do not need to pay it to apply, qualify, or receive any support. The publisher's stated intention to refund it if a participant receives the stated ₦50,000 support has not been independently verified and is not guaranteed.</p>
-<div class="noticebox">
-<p><b>Payment details (optional contribution only)</b></p>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes">
+<meta name="theme-color" content="#087443">
+<title>Next Batch Interest | Nigeria ₦50K Support Programme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+body.next-batch-page{background:#f4f8f5;color:#14231b}
+.next-batch-page .topline .wrap{max-width:480px;width:calc(100% - 32px)}
+.next-batch-page .header{height:auto;min-height:70px}
+.next-batch-page .header .wrap{width:calc(100% - 32px);max-width:480px}
+.next-batch-page main{width:100%;padding:26px 16px 48px}
+.next-batch-page .form-shell{width:100%;max-width:440px;margin:0 auto;background:#fff;border:1px solid #e4eee7;border-radius:18px;padding:24px 20px;box-shadow:0 14px 40px rgba(5,55,31,.07)}
+.next-batch-page .form-kicker{display:inline-flex;background:#eaf5ee;color:#087443;border-radius:30px;padding:7px 11px;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
+.next-batch-page h1{font:800 clamp(27px,7vw,34px)/1.12 Manrope,sans-serif;letter-spacing:-1.2px;margin:15px 0 10px;color:#123c29}
+.next-batch-page .intro{font-size:14px;line-height:1.7;color:#65736a;margin:0}
+.next-batch-page .status-note{display:flex;gap:10px;align-items:flex-start;background:#fff8e8;border:1px solid #f0dfb5;border-radius:11px;padding:13px;margin:20px 0;color:#69542b;font-size:12px;line-height:1.65}
+.next-batch-page .status-dot{width:8px;height:8px;border-radius:50%;background:#d9a441;flex:0 0 8px;margin-top:5px}
+.next-batch-page .form-section-title{font:800 15px Manrope,sans-serif;color:#183d2b;margin:22px 0 5px}
+.next-batch-page .form-hint{font-size:12px;line-height:1.6;color:#758078;margin:0 0 16px}
+.next-batch-page form p{margin:0 0 15px}
+.next-batch-page form label{display:block;font-size:13px;font-weight:700;color:#263d30;margin-bottom:7px}
+.next-batch-page input[type=text],.next-batch-page input[type=tel],.next-batch-page input[type=file]{display:block;width:100%;min-width:0;max-width:100%;box-sizing:border-box;border:1px solid #dce7df;border-radius:9px;background:#fff;padding:13px 12px;font:14px 'DM Sans',sans-serif;color:#14231b}
+.next-batch-page input:focus{outline:2px solid #b7dfc7;border-color:#087443}
+.next-batch-page .optional-card{background:#f5faf6;border:1px solid #dcece1;border-radius:12px;padding:15px;margin:21px 0}
+.next-batch-page .optional-card h2{font:800 14px Manrope,sans-serif;color:#145333;margin:0 0 8px}
+.next-batch-page .optional-card p{font-size:12px;line-height:1.7;color:#5d6d62;margin:0 0 9px}
+.next-batch-page .optional-card .payment-details{background:#fff;border-radius:9px;padding:12px;margin:12px 0}
+.next-batch-page .payment-details p{margin:0 0 7px}
+.next-batch-page .payment-details p:last-child{margin:0}
+.next-batch-page .optional-check{display:flex;align-items:flex-start;gap:9px;font-size:12px;line-height:1.6;color:#43564a}
+.next-batch-page .optional-check input{margin-top:3px;flex:0 0 auto}
+.next-batch-page .receipt-help{display:block;font-size:11px;line-height:1.5;color:#758078;margin-top:7px}
+.next-batch-page .submit-btn{width:100%;border:0;border-radius:10px;background:#087443;color:#fff;padding:15px;font:800 14px 'DM Sans',sans-serif;cursor:pointer;margin-top:5px}
+.next-batch-page .preview-result{background:#edf7f0;border:1px solid #d5eadd;border-radius:10px;padding:12px;color:#28543a;font-size:12px;line-height:1.6;margin-top:14px}
+.next-batch-page .back-link{display:block;text-align:center;margin:18px auto 0;color:#087443;text-decoration:none;font-size:13px;font-weight:700}
+.next-batch-page .page-footer{max-width:440px;margin:18px auto 0;text-align:center;color:#738078;font-size:11px;line-height:1.7;padding:0 8px}
+@media(max-width:480px){.next-batch-page main{padding:16px 12px 36px}.next-batch-page .form-shell{padding:21px 16px;border-radius:15px}}
+</style>
+</head>
+<body class="next-batch-page">
+<div class="topline"><div class="wrap topinner"><span>🇳🇬 Nigeria · Independent information page</span><span>Next batch interest</span></div></div>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="index.html"><span class="crest">NG</span><span><b>NIGERIA ₦50K</b><small>SUPPORT PROGRAMME</small></span></a>
+<a class="btn ghost" href="index.html" style="color:#087443;border-color:#087443">← Home</a>
+</div></header>
+<main>
+<section class="form-shell" aria-labelledby="form-title">
+<span class="form-kicker">Next batch · Interest form preview</span>
+<h1 id="form-title">Register your interest</h1>
+<p class="intro">Use this preview to see the details an interest form may request. Please do not enter real personal information.</p>
+<div class="status-note"><span class="status-dot"></span><div><strong>Important programme update</strong><br>This is an independent information page, not an official government registration portal. No verified next-batch application has been announced. This preview does not submit or save information.</div></div>
+<h2 class="form-section-title">Your contact details</h2>
+<p class="form-hint">The fields below are for demonstration only.</p>
+<form id="interestPreviewForm">
+<p><label for="firstName">First name</label><input id="firstName" name="firstName" type="text" autocomplete="off" placeholder="Enter first name"></p>
+<p><label for="surname">Surname</label><input id="surname" name="surname" type="text" autocomplete="off" placeholder="Enter surname"></p>
+<p><label for="phoneNumber">Phone number</label><input id="phoneNumber" name="phoneNumber" type="tel" autocomplete="off" placeholder="Enter phone number"></p>
+<div class="optional-card">
+<h2>Optional contribution · ₦5,000</h2>
+<p>This contribution is entirely voluntary, proposed by this page's publisher, and is not an official government fee. You do not need to pay it to apply, qualify, or receive support.</p>
+<p>The publisher has stated an intention to refund it if a participant receives the stated ₦50,000 support. That intention has not been independently verified and is not guaranteed.</p>
+<div class="payment-details">
+<p><strong>Payment details (optional contribution only)</strong></p>
 <p>Account name: <strong>To be provided by the page publisher</strong></p>
 <p>Account number: <strong>[Account number to be added]</strong></p>
-<p>Only consider contributing after independently verifying the recipient and understanding that this is not a government payment.</p>
 </div>
-<p><label for="paymentReceipt"><b>Upload payment receipt (optional)</b></label><br><input id="paymentReceipt" name="paymentReceipt" type="file" accept="image/*,.pdf"><small id="receiptFileName">No receipt selected. Receipt is not uploaded or stored by this preview.</small></p>
-<label><input type="checkbox" name="optionalContribution"> I understand that the ₦5,000 contribution is completely optional and is not required.</label></div><p><button class="btn primary" type="submit">Submit</button></p><p id="formPreviewMessage" role="status" aria-live="polite"><b>Preview only:</b> This form does not send or save your details, accept applications, or process payments. Do not enter real personal information.</p></form>
-</div></div></section></main>
-<footer><div class="wrap foot"><a class="brand footbrand" href="index.html"><span class="crest">NG</span><span><b>NIGERIA ₦50K</b><small>SUPPORT PROGRAMME</small></span></a><p>Independent public information page · Nigeria</p><small>This is not an official government or CBN website. The ₦5,000 contribution is optional, not an official fee, and is not required to qualify.</small></div></footer>
+<p>Only consider contributing after independently verifying the recipient and understanding that this is not a government payment.</p>
+<p><label for="paymentReceipt">Receipt image or PDF (optional)</label><input id="paymentReceipt" name="paymentReceipt" type="file" accept="image/*,.pdf"><small class="receipt-help" id="receiptFileName">A selected file stays on this device. It is not uploaded or stored by this preview.</small></p>
+<label class="optional-check"><input type="checkbox" name="optionalContribution"> I understand that the ₦5,000 contribution is completely optional and is not required to qualify.</label>
+</div>
+<button class="submit-btn" type="submit">Preview form</button>
+<p class="preview-result" id="formPreviewMessage" role="status" aria-live="polite">Preview only. This form does not send or save details, accept applications, or process payments. Do not enter real personal information.</p>
+</form>
+<a class="back-link" href="index.html">← Back to homepage</a>
+</section>
+<p class="page-footer">Independent public information page · Nigeria<br>Not an official Federal Government of Nigeria or CBN website. No endorsement is implied.</p>
+</main>
 <script>
-document.getElementById("paymentReceipt")?.addEventListener("change", function() {
- const label=document.getElementById("receiptFileName");
- label.textContent=this.files&&this.files[0]?"Selected locally: "+this.files[0].name+" (not uploaded or stored).":"No receipt selected. Receipt is not uploaded or stored by this preview.";
+document.getElementById('paymentReceipt').addEventListener('change',function(){
+ document.getElementById('receiptFileName').textContent=this.files&&this.files[0]?'Selected locally: '+this.files[0].name+' (not uploaded or stored).':'A selected file stays on this device. It is not uploaded or stored by this preview.';
 });
-document.getElementById("interestPreviewForm")?.addEventListener("submit",function(event){
+document.getElementById('interestPreviewForm').addEventListener('submit',function(event){
  event.preventDefault();
- document.getElementById("formPreviewMessage").textContent="Preview only. No personal details or receipt were sent or saved, and no application or payment was processed.";
+ document.getElementById('formPreviewMessage').textContent='Preview only. No personal details or receipt were sent or saved. No application or payment was processed.';
 });
-</script></body></html>
+</script>
+</body>
+</html>
