@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#087443"><title>Next Batch Interest Form Preview</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body><div class="topline"><div class="wrap topinner"><span><i class="flag"></i> Nigeria · Independent information page</span><span>Next batch interest form preview</span></div></div>
+<header class="header"><div class="wrap nav"><a class="brand" href="index.html"><span class="crest">NG</span><span><b>NIGERIA ₦50K</b><small>SUPPORT PROGRAMME</small></span></a><a class="btn ghost" style="color:#087443;border-color:#087443" href="index.html">Back to homepage</a></div></header>
+<main><section class="section"><div class="wrap"><div class="sectionhead"><span class="kicker">NEXT BATCH · FORM PREVIEW</span><h2>Register your interest</h2><p>This is an independent form preview only. It is not an official government registration portal, and no verified next-batch application has been announced. This form does not send or store information.</p></div>
+<div class="noticebox" style="display:block"><div class="noticebox" style="margin-bottom:18px"><p><b>Important:</b> Do not enter real personal information. No application is submitted through this page.</p></div><form id="interestPreviewForm"><p><label for="firstName"><b>Name</b></label><br><input id="firstName" name="firstName" type="text" autocomplete="given-name" required placeholder="Enter your name"></p><p><label for="surname"><b>Surname</b></label><br><input id="surname" name="surname" type="text" autocomplete="family-name" required placeholder="Enter your surname"></p><p><label for="phoneNumber"><b>Phone number</b></label><br><input id="phoneNumber" name="phoneNumber" type="tel" autocomplete="tel" required placeholder="Enter your phone number"></p><div class="noticebox"><p><b>Optional management contribution: ₦5,000</b></p>
+<p>This contribution is entirely voluntary, proposed by this page's publisher, and is not an official government fee. You do not need to pay it to apply, qualify, or receive any support. The publisher's stated intention to refund it if a participant receives the stated ₦50,000 support has not been independently verified and is not guaranteed.</p>
+<div class="noticebox">
+<p><b>Payment details (optional contribution only)</b></p>
+<p>Account name: <strong>To be provided by the page publisher</strong></p>
+<p>Account number: <strong>[Account number to be added]</strong></p>
+<p>Only consider contributing after independently verifying the recipient and understanding that this is not a government payment.</p>
+</div>
+<p><label for="paymentReceipt"><b>Upload payment receipt (optional)</b></label><br><input id="paymentReceipt" name="paymentReceipt" type="file" accept="image/*,.pdf"><small id="receiptFileName">No receipt selected. Receipt is not uploaded or stored by this preview.</small></p>
+<label><input type="checkbox" name="optionalContribution"> I understand that the ₦5,000 contribution is completely optional and is not required.</label></div><p><button class="btn primary" type="submit">Submit</button></p><p id="formPreviewMessage" role="status" aria-live="polite"><b>Preview only:</b> This form does not send or save your details, accept applications, or process payments. Do not enter real personal information.</p></form>
+</div></div></section></main>
+<footer><div class="wrap foot"><a class="brand footbrand" href="index.html"><span class="crest">NG</span><span><b>NIGERIA ₦50K</b><small>SUPPORT PROGRAMME</small></span></a><p>Independent public information page · Nigeria</p><small>This is not an official government or CBN website. The ₦5,000 contribution is optional, not an official fee, and is not required to qualify.</small></div></footer>
+<script>
+document.getElementById("paymentReceipt")?.addEventListener("change", function() {
+ const label=document.getElementById("receiptFileName");
+ label.textContent=this.files&&this.files[0]?"Selected locally: "+this.files[0].name+" (not uploaded or stored).":"No receipt selected. Receipt is not uploaded or stored by this preview.";
+});
+document.getElementById("interestPreviewForm")?.addEventListener("submit",function(event){
+ event.preventDefault();
+ document.getElementById("formPreviewMessage").textContent="Preview only. No personal details or receipt were sent or saved, and no application or payment was processed.";
+});
+</script></body></html>
