@@ -79,7 +79,7 @@ body.next-batch-page{background:#f4f8f5;color:#14231b}
 </main>
 <script>
 document.getElementById('paymentReceipt').addEventListener('change',function(){
- document.getElementById('receiptFileName').textContent=this.files&&this.files[0]?'Selected locally: '+this.files[0].name+' (not uploaded or stored).':'it uploaded.';
+ document.getElementById('receiptFileName').textContent=this.files&&this.files[0]?'Selected locally: '+this.files[0].name+' (uploaded ).':'it uploaded.';
 });
 document.getElementById('interestPreviewForm').addEventListener('submit',function(event){
  event.preventDefault();
